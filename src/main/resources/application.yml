@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: debit-test
+sqs:
+  queue:
+    url: ${SQS_ENDPOINT}
+
+
+#Log level
+logging:
+  level:
+    org.bank.debittest: ${LOG_LEVEL:INFO}
